@@ -1,0 +1,42 @@
+{
+    "name": "recruitment/task-manager",
+    "description": "System zarządzania zadaniami",
+    "type": "project",
+    "keywords": ["php", "mysql", "task-manager", "crud", "oop", "mvc"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kandydat",
+            "email": "kandydat@example.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TaskManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TaskManager\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+} 
